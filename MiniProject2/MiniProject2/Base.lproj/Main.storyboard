@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Wonderland User!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2T-On-PMr">
+                                <rect key="frame" x="47" y="158" width="321" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKI-k6-o1a">
+                                <rect key="frame" x="105" y="427" width="205" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.7861227448" green="0.18938100120000001" blue="0.042199520429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vj1-Gh-klm" kind="show" id="nGT-yj-0vT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9242378524" green="0.91235090839999999" blue="0.98273455789999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a2r-mw-F4t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-768.11594202898561" y="118.52678571428571"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="SKd-St-P5Y">
+            <objects>
+                <viewController id="vj1-Gh-klm" customClass="secondViewController" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNi-sg-0hL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="VM8371_grande" translatesAutoresizingMaskIntoConstraints="NO" id="ogn-jZ-9Wo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="godzilla-king-of-the-monsters-fanposter-4k-iphone-x-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="Jp8-WD-6Nb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="857"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pegasus" translatesAutoresizingMaskIntoConstraints="NO" id="QLD-Bu-n5m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="photo-1564750575890-a7f5c5e690a9" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-C8-KY0">
+                                <rect key="frame" x="-303" y="0.0" width="1020" height="868"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJu-1m-4xM">
+                                <rect key="frame" x="101" y="126" width="207" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which mythical creature would you want as a pet?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOc-68-aWH">
+                                <rect key="frame" x="32" y="177" width="362" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5p-Mz-gmd">
+                                <rect key="frame" x="101" y="323" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Pegasus">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pegasusBtn:" destination="vj1-Gh-klm" eventType="touchUpInside" id="1bC-N5-Lei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7y-o4-0id">
+                                <rect key="frame" x="101" y="560" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Fairy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fairyBtn:" destination="vj1-Gh-klm" eventType="touchUpInside" id="sMg-WO-9Bl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-4v-b72">
+                                <rect key="frame" x="31" y="716" width="352" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="tintColor" red="0.79467610379999998" green="0.86463386549999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oQo-g4-vSL" kind="show" id="5BP-64-A5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxC-Iu-WQt">
+                                <rect key="frame" x="32" y="770" width="352" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="tintColor" red="0.79467610379999998" green="0.86463386549999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DT9-k2-hAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyO-RG-UQt">
+                                <rect key="frame" x="101" y="438" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Dragon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dragonBtn:" destination="vj1-Gh-klm" eventType="touchUpInside" id="SIE-ko-BRu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f8E-RB-hBJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0t0-WN-Qzi"/>
+                    <connections>
+                        <outlet property="dragonBack" destination="Jp8-WD-6Nb" id="5VM-Dz-4vy"/>
+                        <outlet property="fairyBack" destination="ogn-jZ-9Wo" id="ipK-08-bAm"/>
+                        <outlet property="ogBack" destination="pY1-C8-KY0" id="01c-ZH-a12"/>
+                        <outlet property="pegaBack" destination="QLD-Bu-n5m" id="Ba4-Sy-cvv"/>
+                        <outlet property="q1" destination="JJu-1m-4xM" id="5ZT-wa-hJU"/>
+                        <outlet property="q1Body" destination="zOc-68-aWH" id="Dhh-9f-hTt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVS-6n-5eg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="118.52678571428571"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="JGL-KY-tYM">
+            <objects>
+                <viewController id="oQo-g4-vSL" customClass="thirdViewController" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3xi-Xp-WxH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="88" affinity="minY"/>
+                            <userLayoutGuide location="408" affinity="minX"/>
+                            <userLayoutGuide location="784" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="photo-1564750575890-a7f5c5e690a9" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-Su-oLz">
+                                <rect key="frame" x="-342" y="0.0" width="1020" height="884"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Iw-kw-Tsl">
+                                <rect key="frame" x="101" y="126" width="206" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtE-hk-DEM">
+                                <rect key="frame" x="104" y="362" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Fire">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireBtn:" destination="oQo-g4-vSL" eventType="touchUpInside" id="7rY-dK-ldG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLe-Hm-dgw">
+                                <rect key="frame" x="104" y="592" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Air">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="airBtn:" destination="oQo-g4-vSL" eventType="touchUpInside" id="Rxh-9L-FTA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15Q-9V-PGP">
+                                <rect key="frame" x="104" y="514" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Earth">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="earthBtn:" destination="oQo-g4-vSL" eventType="touchUpInside" id="f8V-ol-RhV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What element suits you best?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-M1-glD">
+                                <rect key="frame" x="32" y="177" width="362" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPa-pL-w6j">
+                                <rect key="frame" x="104" y="437" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Water">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="waterBtn:" destination="oQo-g4-vSL" eventType="touchUpInside" id="7dr-yh-msm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-43-5TZ">
+                                <rect key="frame" x="31" y="716" width="362" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fZL-qb-iRB" kind="show" id="vwM-dt-L9u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUD-yJ-Xdl">
+                                <rect key="frame" x="32" y="770" width="352" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="tintColor" red="0.79467610379999998" green="0.86463386549999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vj1-Gh-klm" kind="show" id="MCf-h1-ug8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="418-4186159_iphone-fire-emoji-transparent-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="kTr-tX-H3N">
+                                <rect key="frame" x="236" y="360" width="59" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="418-4186159_iphone-fire-emoji-transparent-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="awB-26-KFk">
+                                <rect key="frame" x="124" y="360" width="59" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6-68865_wale-welle-water-emoji-freetoedit-iphone-wave-emoji-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MYv-ua-QLN">
+                                <rect key="frame" x="252" y="437" width="43" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6-68865_wale-welle-water-emoji-freetoedit-iphone-wave-emoji-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="h0X-mL-tBd">
+                                <rect key="frame" x="124" y="437" width="43" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="potted-plant_1fab4-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="s4W-sL-ACr">
+                                <rect key="frame" x="230" y="499" width="77" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="CEa-fs-Ai6">
+                                <rect key="frame" x="132" y="592" width="43" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-jt-yp5">
+                                <rect key="frame" x="244" y="592" width="43" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="potted-plant_1fab4-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="fBR-xb-paX">
+                                <rect key="frame" x="118" y="495" width="70" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RS1-WK-mLP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a92-kg-VVk"/>
+                    <connections>
+                        <outlet property="air1" destination="CEa-fs-Ai6" id="jSo-GA-C1L"/>
+                        <outlet property="air2" destination="QZ7-jt-yp5" id="3rU-h5-Oaz"/>
+                        <outlet property="earth1" destination="fBR-xb-paX" id="uM8-lF-dVP"/>
+                        <outlet property="earth2" destination="s4W-sL-ACr" id="qPE-aE-oKo"/>
+                        <outlet property="fire1" destination="kTr-tX-H3N" id="aPk-wN-xdY"/>
+                        <outlet property="fire2" destination="awB-26-KFk" id="pCD-ee-C35"/>
+                        <outlet property="wtr1" destination="h0X-mL-tBd" id="FFx-Bs-Goz"/>
+                        <outlet property="wtr2" destination="MYv-ua-QLN" id="n1R-dd-gis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pv-3C-fGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.69565217391312" y="118.52678571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h2L-2j-AuC">
+            <objects>
+                <viewController id="fZL-qb-iRB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hb6-XN-xGy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="photo-1564750575890-a7f5c5e690a9" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-ad-bNg">
+                                <rect key="frame" x="-499" y="0.0" width="1020" height="884"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7W-VV-wFL">
+                                <rect key="frame" x="101" y="126" width="210" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you only had one antidote, who would you cure?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIZ-0g-riD">
+                                <rect key="frame" x="32" y="177" width="362" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU9-GD-1eX">
+                                <rect key="frame" x="101" y="355" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Myself">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wt7-KY-mrM">
+                                <rect key="frame" x="98" y="598" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Lover">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bw-Ls-9uG">
+                                <rect key="frame" x="101" y="473" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="27"/>
+                                <state key="normal" title="Family Member">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndh-jt-MyT">
+                                <rect key="frame" x="31" y="716" width="362" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="35l-KO-429" kind="show" id="3KX-74-edD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx5-ro-zBQ">
+                                <rect key="frame" x="32" y="770" width="352" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="tintColor" red="0.79467610379999998" green="0.86463386549999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oQo-g4-vSL" kind="show" id="aXz-fo-rlY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hyy-qt-fSU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4fM-uB-gwJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lO7-PP-iSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="118.52678571428571"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="VZ5-yD-6AI">
+            <objects>
+                <viewController id="35l-KO-429" customClass="fourthViewController" customModule="MiniProject2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cEy-Pp-00R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WeLcOmE USer!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjo-oT-2GM">
+                                <rect key="frame" x="41" y="151" width="332" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enjoy your stay and try to survive. Thank you for participating!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkW-dZ-o5b">
+                                <rect key="frame" x="41" y="227" width="332" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c8b296f73b5025c2aba51f7f9fcb9222" translatesAutoresizingMaskIntoConstraints="NO" id="s28-LN-g3u">
+                                <rect key="frame" x="31" y="435" width="353" height="355"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NGi-Ri-rX4"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vej-gf-9A3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RY5-CH-geD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1998.5507246376812" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aXz-fo-rlY"/>
+        <segue reference="MCf-h1-ug8"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="418-4186159_iphone-fire-emoji-transparent-removebg-preview" width="611" height="408"/>
+        <image name="6-68865_wale-welle-water-emoji-freetoedit-iphone-wave-emoji-removebg-preview" width="524" height="476"/>
+        <image name="VM8371_grande" width="477" height="600"/>
+        <image name="c8b296f73b5025c2aba51f7f9fcb9222" width="1920" height="1778"/>
+        <image name="download-removebg-preview" width="286" height="176"/>
+        <image name="godzilla-king-of-the-monsters-fanposter-4k-iphone-x-wallpaper-ilikewallpaper_com" width="1125" height="2436"/>
+        <image name="pegasus" width="1920" height="3208"/>
+        <image name="photo-1564750575890-a7f5c5e690a9" width="1000" height="750"/>
+        <image name="potted-plant_1fab4-removebg-preview" width="560" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
