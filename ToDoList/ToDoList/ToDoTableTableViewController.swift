@@ -8,27 +8,42 @@
 import UIKit
 
 class ToDoTableTableViewController: UITableViewController {
-
-    var listOfToDo : [ToDoClass] = []
     
-    func createToDo () ->[ToDoClass] {
-        let swiftToDo = ToDoClass ()
-        swiftToDo.description = "Learn Swift"
-        swiftToDo.important = true
-        
-        let dogToDo = ToDoClass ()
-        dogToDo.description = "Walk the Dog"
-        
-        return [swiftToDo, dogToDo]
+    var listOfToDo : [ToDoCD] = []
+
+//    var listOfToDo : [ToDoClass] = []
+    
+    
+//    func createToDo () ->[ToDoClass] {
+//        let swiftToDo = ToDoClass ()
+//        swiftToDo.description = "Learn Swift"
+//        swiftToDo.important = true
+//
+//        let dogToDo = ToDoClass ()
+//        dogToDo.description = "Walk the Dog"
+//
+//        return [swiftToDo, dogToDo]
+//    }
+    
+    func getToDos () {
+        if let accessToCoreData =
+            (UIApplication.shared.delegate as?AppDelegate)?.persistentContainer.viewContext {
+            if let dataFromCoreData = try?
+                accessToCoreData.fetch(ToDoCD.fetchRequest()) as? [ToDoCD]{
+                listOfToDo = dataFromCoreData
+                tableView.reloadData()
+            }
+        }
     }
     
     
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
         
         
-        listOfToDo = createToDo()
+//        listOfToDo = createToDo()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -56,12 +71,20 @@ class ToDoTableTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
         let eachToDo = listOfToDo [indexPath.row]
-        cell.textLabel?.text = eachToDo.description
+//        cell.textLabel?.text = eachToDo.description
 
-        if eachToDo.important {
-            cell.textLabel?.text = "❗️" + eachToDo.description
-        } else {
-            cell.textLabel?.text = eachToDo.description
+//        if eachToDo.important {
+//            cell.textLabel?.text = "❗️" + eachToDo.descriptionInCD
+//        } else {
+//            cell.textLabel?.text = eachToDo.description
+//        }
+        
+        if let thereIsDescription = eachToDo.descriptionInCD {
+            if eachToDo.importantInCD {
+                cell.textLabel?.text = "⚠️" + thereIsDescription
+            } else {
+                cell.textLabel?.text = eachToDo.descriptionInCD
+            }
         }
         // Configure the cell...
 
@@ -71,7 +94,9 @@ class ToDoTableTableViewController: UITableViewController {
 
 
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        getToDos()
+    }
     
     // MARK: - Navigation
 
@@ -81,7 +106,7 @@ class ToDoTableTableViewController: UITableViewController {
             nextAddToDoVC.previousToDoTVC = self
         }
         if let nextCompletedToDoVC = segue.destination as? CompletedToDoViewController {
-            if let choosenToDo = sender as? ToDoClass {
+            if let choosenToDo = sender as? ToDoCD {
                 nextCompletedToDoVC.selectedToDo = choosenToDo
                 nextCompletedToDoVC.previousToDoTVC = self
             }
